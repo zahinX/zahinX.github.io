@@ -1,12 +1,20 @@
 {
   "name": "Zahin Ahad",
+
   "initials": "ZA",
+
   "role": "Software QA Engineer & SDET",
+
   "headline": "I find the bugs before your users do.",
+
   "subheadline": "Six years of breaking software on purpose. I do test automation, API and performance testing, and release audits for web and mobile teams.",
+
   "location": "Bangladesh · Working remotely with teams worldwide",
+
   "availability": "Taking new audit projects",
+
   "avatar": "",
+
   "og_image": "https://zahinx.github.io/assets/og.png",
 
   "about": [
@@ -22,6 +30,7 @@
   ],
 
   "services_intro": "Fixed-scope audits and packages. Pick the one that matches the problem you have right now, or use the picker below.",
+
   "services": [
     {
       "id": "smoke-test",
@@ -136,6 +145,7 @@
       ]
     }
   ],
+
   "triage_call": "Not sure where to start? Book a free 15-minute triage call and we'll work out what you actually need.",
 
   "picker": {
@@ -172,12 +182,36 @@
   },
 
   "highlights": [
-    { "metric": "−30%", "title": "Regression time cut", "text": "Automated manual regression suites, so a multi-day testing cycle became a scheduled CI run." },
-    { "metric": "Lead", "title": "Automation for international clients", "text": "Led Playwright + TypeScript automation projects and connected client requirements with the delivery team." },
-    { "metric": "3×", "title": "CI platforms", "text": "Wired test suites into GitHub Actions, Jenkins and Azure DevOps pipelines." },
-    { "metric": "iOS + Android", "title": "Mobile releases", "text": "Worked with app teams to take releases through to both app stores." },
-    { "metric": "API", "title": "Backend confidence", "text": "Tested RESTful APIs for integration correctness on an enterprise web platform." },
-    { "metric": "Mentor", "title": "Built QA teams up", "text": "Mentored engineers in manual and automated testing and trained batches of QA interns." }
+    {
+      "metric": "−30%",
+      "title": "Regression time cut",
+      "text": "Automated manual regression suites, so a multi-day testing cycle became a scheduled CI run."
+    },
+    {
+      "metric": "Lead",
+      "title": "Automation for international clients",
+      "text": "Led Playwright + TypeScript automation projects and connected client requirements with the delivery team."
+    },
+    {
+      "metric": "3×",
+      "title": "CI platforms",
+      "text": "Wired test suites into GitHub Actions, Jenkins and Azure DevOps pipelines."
+    },
+    {
+      "metric": "iOS + Android",
+      "title": "Mobile releases",
+      "text": "Worked with app teams to take releases through to both app stores."
+    },
+    {
+      "metric": "API",
+      "title": "Backend confidence",
+      "text": "Tested RESTful APIs for integration correctness on an enterprise web platform."
+    },
+    {
+      "metric": "Mentor",
+      "title": "Built QA teams up",
+      "text": "Mentored engineers in manual and automated testing and trained batches of QA interns."
+    }
   ],
 
   "approach": [
@@ -188,11 +222,56 @@
   ],
 
   "skills": [
-    { "group": "UI automation", "items": ["Playwright", "Cypress", "Selenium", "TypeScript", "JavaScript", "Java"] },
-    { "group": "API & performance", "items": ["REST API testing", "k6", "Postman", "Contract & negative testing"] },
-    { "group": "CI/CD", "items": ["GitHub Actions", "Jenkins", "Azure DevOps", "Git"] },
-    { "group": "Platforms", "items": ["Web apps", "PWAs", "iOS", "Android", "Enterprise platforms"] },
-    { "group": "Practice", "items": ["Test strategy", "Exploratory testing", "Regression testing", "Accessibility", "Test documentation", "Bug triage"] }
+    {
+      "group": "UI automation",
+      "items": [
+        "Playwright",
+        "Cypress",
+        "Selenium",
+        "TypeScript",
+        "JavaScript",
+        "Java"
+      ]
+    },
+    {
+      "group": "API & performance",
+      "items": [
+        "REST API testing",
+        "k6",
+        "Postman",
+        "Contract & negative testing"
+      ]
+    },
+    {
+      "group": "CI/CD",
+      "items": [
+        "GitHub Actions",
+        "Jenkins",
+        "Azure DevOps",
+        "Git"
+      ]
+    },
+    {
+      "group": "Platforms",
+      "items": [
+        "Web apps",
+        "PWAs",
+        "iOS",
+        "Android",
+        "Enterprise platforms"
+      ]
+    },
+    {
+      "group": "Practice",
+      "items": [
+        "Test strategy",
+        "Exploratory testing",
+        "Regression testing",
+        "Accessibility",
+        "Test documentation",
+        "Bug triage"
+      ]
+    }
   ],
 
   "experience": [
@@ -281,22 +360,39 @@
   ],
 
   "certifications": [
-    "Automated Software Testing with Cypress",
-    "Software Testing Bootcamp",
-    "AI Fundamentals",
-    "AI Productivity Boosts for Project Management",
-    "HTML5, CSS3 & Bootstrap 4 for Web Development"
+    { "name": "Automated Software Testing with Cypress", "url": "" },
+    { "name": "Software Testing Bootcamp", "url": "" },
+    { "name": "AI Fundamentals", "url": "" },
+    { "name": "AI Productivity Boosts for Project Management", "url": "" },
+    { "name": "HTML5, CSS3 & Bootstrap 4 for Web Development", "url": "" }
   ],
+
+  "about_title": "Quality is a habit, not a phase",
+
+  "contact_title": "Have something that needs testing?",
+
+  "contact_text": "Tell me what you're building and what keeps breaking. I reply within one working day.",
+
+  "terminal": {
+    "command": "npx playwright test zahin-ahad.spec.ts",
+    "intro": "Running 6 tests using 1 worker",
+    "checks": [
+      "has ~6 years of software QA experience",
+      "automates with Playwright, Cypress & Selenium",
+      "load-tests APIs with k6",
+      "wires test suites into CI/CD",
+      "ships releases to iOS & Android",
+      "mentors QA teams"
+    ],
+    "summary": "6 passed · 0 failed · 0 flaky"
+  },
 
   "awards": [
     "Runner-Up, Hult Prize",
     "Dean's List Award (×2)"
   ],
 
-  "education": {
-    "school": "American International University-Bangladesh",
-    "degree": "BSc, Computer Science"
-  },
+  "education": { "school": "American International University-Bangladesh", "degree": "BSc, Computer Science" },
 
   "contact": {
     "email": "zahin.ahad@gmail.com",

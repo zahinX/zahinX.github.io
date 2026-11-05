@@ -22,17 +22,11 @@
 
   function hero(p) {
     var c = p.contact;
-    var lines = [
-      ["cmd", "$ npx playwright test zahin-ahad.spec.ts"],
-      ["dim", "Running 6 tests using 1 worker"],
-      ["ok", "✓ has ~6 years of software QA experience"],
-      ["ok", "✓ automates with Playwright, Cypress & Selenium"],
-      ["ok", "✓ load-tests APIs with k6"],
-      ["ok", "✓ wires test suites into CI/CD"],
-      ["ok", "✓ ships releases to iOS & Android"],
-      ["ok", "✓ mentors QA teams"],
-      ["sum", "6 passed · 0 failed · 0 flaky"],
-    ];
+    var t = p.terminal || {};
+    var checks = t.checks || [];
+    var lines = [["cmd", "$ " + (t.command || "")], ["dim", t.intro || ""]]
+      .concat(checks.map(function (c) { return ["ok", "✓ " + c]; }))
+      .concat([["sum", t.summary || ""]]);
     var term = lines
       .map(function (l, i) {
         return '<div class="t-line t-' + l[0] + '" style="--i:' + i + '">' + esc(l[1]) + "</div>";
@@ -52,7 +46,7 @@
       "</div>" +
       '<p class="loc">' + esc(p.location) + "</p>" +
       "</div>" +
-      '<div class="terminal" role="img" aria-label="A terminal running a test suite named zahin-ahad, all 6 tests passing">' +
+      '<div class="terminal" role="img" aria-label="A terminal running a test suite, all checks passing">' +
       '<div class="term-bar"><span></span><span></span><span></span><em>zsh · qa</em></div>' +
       '<div class="term-body" aria-hidden="true">' + term + "</div>" +
       "</div>" +
@@ -69,7 +63,7 @@
 
   function about(p) {
     var paras = p.about.map(function (t) { return "<p>" + esc(t) + "</p>"; }).join("");
-    return section("about", "About", "Quality is a habit, not a phase", '<div class="prose">' + paras + "</div>", "section-about");
+    return section("about", "About", p.about_title || "Quality is a habit, not a phase", '<div class="prose">' + paras + "</div>", "section-about");
   }
 
   function services(p) {
@@ -166,6 +160,14 @@
     );
   }
 
+  /* A certification is { name, url }. With a url it links to the shareable credential; without one it is plain text. */
+  function certItem(c) {
+    var name = typeof c === "string" ? c : c.name;
+    var url = typeof c === "string" ? "" : c.url;
+    if (!/^https:\/\//.test(url || "")) return "<li>" + esc(name) + "</li>";
+    return '<li><a class="cert-link" href="' + esc(url) + '" target="_blank" rel="noopener noreferrer" data-track="cert_link">' + esc(name) + " ↗</a></li>";
+  }
+
   function skills(p) {
     var groups = p.skills
       .map(function (g) {
@@ -174,7 +176,7 @@
       .join("");
     var creds =
       '<div class="creds">' +
-      '<div><h3>Certifications</h3><ul class="plain">' + p.certifications.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ul></div>" +
+      '<div><h3>Certifications</h3><ul class="plain">' + p.certifications.map(certItem).join("") + "</ul></div>" +
       '<div><h3>Honours</h3><ul class="plain">' + p.awards.map(function (c) { return "<li>" + esc(c) + "</li>"; }).join("") + "</ul></div>" +
       '<div><h3>Education</h3><ul class="plain"><li>' + esc(p.education.degree) + "<br><span class=\"muted\">" + esc(p.education.school) + "</span></li></ul></div>" +
       "</div>";
@@ -191,8 +193,8 @@
     return (
       '<section id="contact" class="section contact" aria-labelledby="contact-title"><div class="wrap">' +
       '<p class="eyebrow"><span class="kw">await</span> <span class="fn">expect</span>(you).<span class="fn">toBeInTouch</span>()</p>' +
-      '<h2 id="contact-title">Have something that needs testing?</h2>' +
-      '<p class="intro">Tell me what you\'re building and what keeps breaking. I reply within one working day.</p>' +
+      '<h2 id="contact-title">' + esc(p.contact_title || "Have something that needs testing?") + "</h2>" +
+      '<p class="intro">' + esc(p.contact_text || "") + "</p>" +
       '<div class="cta-row">' + links + "</div>" +
       "</div></section>"
     );

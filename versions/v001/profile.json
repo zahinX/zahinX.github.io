@@ -1,0 +1,313 @@
+{
+  "name": "Zahin Ahad",
+  "initials": "ZA",
+  "role": "Software QA Engineer & SDET",
+  "headline": "I find the bugs before your users do.",
+  "subheadline": "Six years of breaking software on purpose. I do test automation, API and performance testing, and release audits for web and mobile teams.",
+  "location": "Bangladesh · Working remotely with teams worldwide",
+  "availability": "Taking new audit projects",
+  "avatar": "",
+  "og_image": "https://zahinx.github.io/assets/og.png",
+
+  "about": [
+    "I make sure the software a team ships works, holds up under pressure and is pleasant to use. I've spent close to six years in QA, from manual exploratory testing to leading automation for international clients, and I've learned that quality is a habit a team builds, not a phase at the end of a project.",
+    "I like digging into the details: the edge case nobody thought of, the flaky test everyone ignores, the slow API call that only shows up under load. I pair that with a practical approach. You get tests that run in CI, reports your team can act on, and a QA process that keeps working after I'm gone."
+  ],
+
+  "stats": [
+    { "value": "6", "suffix": "yrs", "label": "in software QA" },
+    { "value": "30", "suffix": "%", "label": "less regression time through automation" },
+    { "value": "7", "suffix": "", "label": "teams I've shipped with" },
+    { "value": "3", "suffix": "", "label": "CI platforms automated on" }
+  ],
+
+  "services_intro": "Fixed-scope audits and packages. Pick the one that matches the problem you have right now, or use the picker below.",
+  "services": [
+    {
+      "id": "smoke-test",
+      "icon": "🔥",
+      "name": "Smoke Test",
+      "kind": "Quick Health Check",
+      "tagline": "Is it on fire? Find out in 48 hours.",
+      "duration": "2 days",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "Critical user journeys tested end to end",
+        "Cross-browser and mobile spot checks",
+        "Lighthouse performance and accessibility scan",
+        "Prioritised bug report with repro steps and videos"
+      ]
+    },
+    {
+      "id": "regression-shield",
+      "icon": "🛡️",
+      "name": "Regression Shield",
+      "kind": "Automation Starter",
+      "tagline": "Stop re-testing the same thing every release.",
+      "duration": "1–2 weeks",
+      "price": "Let's talk",
+      "featured": true,
+      "includes": [
+        "Playwright + TypeScript (or Cypress) framework, set up properly",
+        "Your top 15 critical flows automated",
+        "Runs in CI: GitHub Actions, Azure DevOps or Jenkins",
+        "HTML reports and a handover walkthrough"
+      ]
+    },
+    {
+      "id": "load-and-break",
+      "icon": "⚡",
+      "name": "Load & Break",
+      "kind": "Performance Audit",
+      "tagline": "Find your breaking point before your users do.",
+      "duration": "1 week",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "k6 load, stress and spike scenarios on key endpoints",
+        "Response time, error rate and throughput baselines",
+        "Bottleneck report with clear next steps",
+        "Performance thresholds wired into CI"
+      ]
+    },
+    {
+      "id": "contract-check",
+      "icon": "🔌",
+      "name": "Contract Check",
+      "kind": "API Audit",
+      "tagline": "Your backend, tested from every angle.",
+      "duration": "3–5 days",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "REST endpoint coverage map",
+        "Auth, validation and negative/edge-case tests",
+        "A runnable API test suite you keep",
+        "Findings ranked by risk"
+      ]
+    },
+    {
+      "id": "ship-it",
+      "icon": "🚀",
+      "name": "Ship-It",
+      "kind": "Release Readiness Audit",
+      "tagline": "A go/no-go decision you can trust.",
+      "duration": "1 week",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "Full pre-launch sweep: web, PWA, iOS and Android",
+        "Functional, UX and WCAG 2.2 AA accessibility checks",
+        "App store submission checklist",
+        "Signed-off go/no-go report"
+      ]
+    },
+    {
+      "id": "qa-partner",
+      "icon": "🧭",
+      "name": "QA Partner",
+      "kind": "Monthly Retainer",
+      "tagline": "A part-time QA lead, without the full-time hire.",
+      "duration": "Monthly",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "Regression runs before every release",
+        "Test suite maintenance, with flaky tests fixed",
+        "Release sign-offs",
+        "Monthly quality report"
+      ]
+    },
+    {
+      "id": "team-uplift",
+      "icon": "🎓",
+      "name": "Team Uplift",
+      "kind": "QA Mentoring Workshop",
+      "tagline": "Turn your developers into bug hunters.",
+      "duration": "1–3 sessions",
+      "price": "Let's talk",
+      "featured": false,
+      "includes": [
+        "Test design and risk-based testing",
+        "Automation fundamentals, hands-on",
+        "Getting tests into CI",
+        "Your team leaves with a working starter suite"
+      ]
+    }
+  ],
+  "triage_call": "Not sure where to start? Book a free 15-minute triage call and we'll work out what you actually need.",
+
+  "picker": {
+    "title": "Which package fits?",
+    "questions": [
+      {
+        "id": "stage",
+        "label": "Where is your product right now?",
+        "options": [
+          { "value": "prelaunch", "label": "About to launch" },
+          { "value": "live", "label": "Live with users" }
+        ]
+      },
+      {
+        "id": "pain",
+        "label": "What hurts most?",
+        "options": [
+          { "value": "bugs", "label": "Bugs reach users" },
+          { "value": "manual", "label": "Regression testing takes forever" },
+          { "value": "slow", "label": "It gets slow under load" },
+          { "value": "api", "label": "The API feels fragile" },
+          { "value": "skills", "label": "My team doesn't know how to test" }
+        ]
+      },
+      {
+        "id": "team",
+        "label": "Do you have QA on the team?",
+        "options": [
+          { "value": "none", "label": "No dedicated QA" },
+          { "value": "some", "label": "Yes, some QA" }
+        ]
+      }
+    ]
+  },
+
+  "highlights": [
+    { "metric": "−30%", "title": "Regression time cut", "text": "Automated manual regression suites, so a multi-day testing cycle became a scheduled CI run." },
+    { "metric": "Lead", "title": "Automation for international clients", "text": "Led Playwright + TypeScript automation projects and connected client requirements with the delivery team." },
+    { "metric": "3×", "title": "CI platforms", "text": "Wired test suites into GitHub Actions, Jenkins and Azure DevOps pipelines." },
+    { "metric": "iOS + Android", "title": "Mobile releases", "text": "Worked with app teams to take releases through to both app stores." },
+    { "metric": "API", "title": "Backend confidence", "text": "Tested RESTful APIs for integration correctness on an enterprise web platform." },
+    { "metric": "Mentor", "title": "Built QA teams up", "text": "Mentored engineers in manual and automated testing and trained batches of QA interns." }
+  ],
+
+  "approach": [
+    { "step": "Understand", "text": "Learn the business goals, the users and where the risk really sits." },
+    { "step": "Plan", "text": "Write a risk-based test strategy that tests the right things first." },
+    { "step": "Automate", "text": "Build reliable suites that run in CI on every change." },
+    { "step": "Report", "text": "Turn findings into clear, prioritised work your team can act on." }
+  ],
+
+  "skills": [
+    { "group": "UI automation", "items": ["Playwright", "Cypress", "Selenium", "TypeScript", "JavaScript", "Java"] },
+    { "group": "API & performance", "items": ["REST API testing", "k6", "Postman", "Contract & negative testing"] },
+    { "group": "CI/CD", "items": ["GitHub Actions", "Jenkins", "Azure DevOps", "Git"] },
+    { "group": "Platforms", "items": ["Web apps", "PWAs", "iOS", "Android", "Enterprise platforms"] },
+    { "group": "Practice", "items": ["Test strategy", "Exploratory testing", "Regression testing", "Accessibility", "Test documentation", "Bug triage"] }
+  ],
+
+  "experience": [
+    {
+      "company": "Ipex",
+      "title": "Software Quality Assurance Engineer",
+      "start": "Mar 2025",
+      "end": "Present",
+      "location": "Zurich, Switzerland",
+      "points": []
+    },
+    {
+      "company": "SELISE Digital Platforms",
+      "title": "Senior Product Analyst",
+      "start": "Oct 2024",
+      "end": "Present",
+      "location": "",
+      "points": [
+        "Work with the app team to release apps on Android and iOS",
+        "Gather requirements in client meetings to shape the product",
+        "Write and maintain automated tests for an enterprise web platform",
+        "Test RESTful APIs to validate backend functionality and integration"
+      ]
+    },
+    {
+      "company": "CRM Realm",
+      "title": "Mentor & Lead, QA",
+      "start": "Feb 2024",
+      "end": "Jul 2025",
+      "location": "",
+      "points": [
+        "Led test automation projects for international clients",
+        "Automated tests with Playwright and TypeScript",
+        "Maintained tests in Azure DevOps CI/CD pipelines",
+        "Mentored the team in manual and automated testing"
+      ]
+    },
+    {
+      "company": "KuiperZ",
+      "title": "Software QA Engineer",
+      "start": "Jul 2024",
+      "end": "Sep 2024",
+      "location": "",
+      "points": [
+        "Integrated the test automation suite into GitHub Actions",
+        "Automated web application tests with Cypress",
+        "Tested web apps, PWAs and mobile apps manually"
+      ]
+    },
+    {
+      "company": "SJ Innovation LLC",
+      "title": "Jr. Software QA Engineer (L1 → L2)",
+      "start": "Jun 2022",
+      "end": "May 2024",
+      "location": "Dhaka, Bangladesh",
+      "points": [
+        "Automated manual test cases, cutting regression testing time by 30%",
+        "Scheduled and ran automation suites with Jenkins",
+        "Produced automation reports and fed results back to clients",
+        "Onboarded QA teammates onto the automation projects"
+      ]
+    },
+    {
+      "company": "W3 Engineers Ltd",
+      "title": "Jr. Software QA Engineer",
+      "start": "Nov 2021",
+      "end": "Apr 2022",
+      "location": "",
+      "points": [
+        "Built, debugged and extended Cypress test suites",
+        "Trained a batch of QA interns and onboarded them onto projects",
+        "Planned tests around business goals and user needs"
+      ]
+    },
+    {
+      "company": "Fingerprint Information Technology",
+      "title": "Software Quality Assurance Engineer",
+      "start": "Mar 2021",
+      "end": "Oct 2021",
+      "location": "",
+      "points": [
+        "Wrote automated test scripts in Selenium",
+        "Created test documentation and executed test cases"
+      ]
+    }
+  ],
+
+  "certifications": [
+    "Automated Software Testing with Cypress",
+    "Software Testing Bootcamp",
+    "AI Fundamentals",
+    "AI Productivity Boosts for Project Management",
+    "HTML5, CSS3 & Bootstrap 4 for Web Development"
+  ],
+
+  "awards": [
+    "Runner-Up, Hult Prize",
+    "Dean's List Award (×2)"
+  ],
+
+  "education": {
+    "school": "American International University-Bangladesh",
+    "degree": "BSc, Computer Science"
+  },
+
+  "contact": {
+    "email": "zahin.ahad@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/zahin-ahad/",
+    "github": "https://github.com/zahinX",
+    "cv": ""
+  },
+
+  "site": {
+    "url": "https://zahinx.github.io/",
+    "title": "Zahin Ahad · QA Engineer & Test Automation",
+    "description": "Software QA engineer offering test automation, API and performance testing, and release readiness audits for web and mobile teams."
+  }
+}
